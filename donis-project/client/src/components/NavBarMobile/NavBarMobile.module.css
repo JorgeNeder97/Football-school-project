@@ -1,0 +1,202 @@
+:root {
+    --font-size-small: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-link: 1.10rem;
+    --font-size-subheading: 1.25rem;
+    --font-size-heading: 1.5rem;
+    --font-size-large-heading: 2rem;
+    --font-size-extra-large-heading: 2.5rem;
+
+    --bar-width: 25px;
+    --bar-height: 3px;
+    --hamburger-gap: 6px;
+    --foreground: #EEE;
+    --background: #F45858;
+    --background-gradient: linear-gradient(190deg, #F45858, #F47C7C);
+    --hamburger-margin: 20px;
+    --animation-timing: 200ms ease-in-out;
+    --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+}
+
+/* ---------------MOBILE--------------- */
+
+
+.mobileContainer {
+    width: 100vw;
+    height: 61px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background: var(--background);
+    background-size: 100%;
+    background-position: bottom;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logosContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 50px;
+    padding-left: 10px;
+    padding-top: 1px;
+}
+
+.logoTexto {
+    width: 200px;
+    margin: 0;
+    z-index: 1;
+}
+
+/* Burger Menu */
+
+.hamburgerMenuButton {
+    --x-width: calc(var(--hamburger-height) * 1.41421356237);
+    display: flex;
+    flex-direction: column;
+    gap: var(--hamburger-gap);
+    width: max-content;
+    position: absolute;
+    top: var(--hamburger-margin);
+    right: var(--hamburger-margin);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.hamburgerMenuButton:has(input:focus-visible)::before,
+.hamburgerMenuButton:has(input:focus-visible)::after,
+.hamburgerMenuButton input:focus-visible {
+    border: 1px solid var(--foreground);
+}
+
+.hamburgerMenuButton::before,
+.hamburgerMenuButton::after,
+.hamburgerMenuButton input {
+    content: '';
+    width: var(--bar-width);
+    height: var(--bar-height);
+    background-color: var(--foreground);
+    border-radius: 1px;
+    transform-origin: right center;
+    transition: opacity var(--animation-timing), width var(--animation-timing), rotate var(--animation-timing), transform var(--animation-timing), background-color var(--animation-timing);
+}
+
+.hamburgerMenuButton input {
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    pointer-events: none;
+}
+
+.hamburgerMenuButton:has(input:checked)::before {
+    rotate: -45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / -2);
+}
+
+.hamburgerMenuButton:has(input:checked)::after {
+    rotate: 45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / 2);
+}
+
+.hamburgerMenuButton input:checked {
+    opacity: 0;
+    width: 0;
+}
+
+.hamburgerMenuButton:has(input:checked) + .sideBar {
+    transform: translateX(0);
+}
+
+
+/* Burger Menu */
+
+.sideBar {
+    transition: transform var(--animation-timing);
+    transform: translateX(100%);
+    padding-top: calc(var(--hamburger-height) + var(--hamburger-margin));
+    background: var(--background-gradient);
+    color: var(--foreground);
+    width: 17rem;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.linksContainer {
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(7, 65px);
+    align-content: center;
+    margin-top: var(--hamburger-margin);
+}
+
+.linksContainer a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.links {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #EEE;
+    border-top: 1px solid #EEE;
+    font-family: var(--font-link);
+    font-size: var(--font-size-heading);
+    text-align: center;
+}
+
+.links:nth-child(5) {
+    border-bottom: 1px solid #EEE;
+}
+
+.developedBy {
+    width: 100%;
+    padding-bottom: 15px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.developedByText {
+    font-size: var(--font-size-heading);
+    font-family: var(--font-link);
+    text-align: right;
+    margin: 0;
+}
+
+.developedByLogo {
+    width: 180px;
+    object-fit: cover;
+}
+
+
+
+/* ---------------MOBILE--------------- */
+
+
+@media (min-width: 992px) {
+    .mobileContainer {
+        display: none;
+    }
+}
