@@ -1,10 +1,14 @@
 import styles from "./NavBar.module.css";
 import logo from "@assets/logo.png";
+import useViewport from "@hooks/useViewport";
 import logoHorizontal from '@assets/donis.png';
 import { Link } from "react-router-dom";
 import { NavBarMobile } from "@components/NavBarMobile/NavBarMobile";
 
 export const NavBar = () => {
+
+    const { width } = useViewport();
+
     return (
         <>
             <div className={styles.mainContainer}>
@@ -17,7 +21,7 @@ export const NavBar = () => {
                         <Link to="" className={styles.links}>Noticias</Link>
                         <Link to="" className={styles.links}>Auspiciantes</Link>
                         <Link to="" className={styles.links}>Contacto</Link>
-                        <Link to="" className={styles.links}>Galería de Fotos</Link>
+                        <Link to="" className={styles.links}>{width < 1210 ? 'Galería' : 'Galería de Fotos'}</Link>
                 </div>
             </div>
             <NavBarMobile />

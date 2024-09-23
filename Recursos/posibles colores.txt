@@ -1,0 +1,4 @@
+
+Camiseta: 
+Azul: #0344a8
+Blanco: #c4cfdc
