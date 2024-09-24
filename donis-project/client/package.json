@@ -3,6 +3,15 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "imports": {
+    "#models/*": "./src/models/*",
+    "#components/*": "./src/components/*",
+    "#services/*": "./src/services/*",
+    "#utils/*": "./src/utils/*",
+    "#pages/*": "./src/pages/*",
+    "#hooks/*": "./src/hooks/*",
+    "#assets/*": "./src/assets/*"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

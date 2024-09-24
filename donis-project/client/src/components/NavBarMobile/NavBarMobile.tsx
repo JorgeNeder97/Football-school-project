@@ -1,8 +1,8 @@
 import styles from './NavBarMobile.module.css';
 import { Link } from "react-router-dom";
-import logoHorizontal from '@assets/donis.png';
-import logo from '@assets/logo.png';
-import marcaPersonal from '@assets/marcaPersonal.png';
+import logoHorizontal from '#assets/donis.png';
+import logo from '#assets/logo.png';
+import marcaPersonal from '#assets/marcaPersonal.png';
 
 export const NavBarMobile = () => {
     return (

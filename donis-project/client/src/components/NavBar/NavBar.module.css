@@ -11,7 +11,10 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        background: #0c431a;
+        background: linear-gradient(to bottom, var(--azul-claro-navBar), var(--azul-oscuro-navBar));
+        position: sticky;
+        top: 0;
+        z-index: 100;
     }
 
     .logoContainer {

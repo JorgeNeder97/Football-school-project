@@ -28,7 +28,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    background: var(--background);
+    background: linear-gradient(to bottom, var(--azul-claro-navBar), var(--azul-oscuro-navBar));
     background-size: 100%;
     background-position: bottom;
     position: sticky;
@@ -37,10 +37,14 @@
 }
 
 .logosContainer {
+    width: 100%;
+    height: 61px;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
+    background: linear-gradient(to bottom, var(--azul-claro-navBar), var(--azul-oscuro-navBar));
+    z-index: 1;
 }
 
 .logo {
@@ -124,7 +128,7 @@
     transition: transform var(--animation-timing);
     transform: translateX(100%);
     padding-top: calc(var(--hamburger-height) + var(--hamburger-margin));
-    background: var(--background-gradient);
+    background: linear-gradient(to bottom, var(--azul-oscuro-navBar)1%, var(--azul-claro-navBar)30%, var(--azul-medio-navBar)70%);
     color: var(--foreground);
     width: 17rem;
     min-height: 100vh;

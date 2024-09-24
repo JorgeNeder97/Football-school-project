@@ -3,11 +3,17 @@
 :root {
   /* Declarar aquí las variables globales para todos los css modules */
   --azul-oscuro-navBar: #0344a8;
-  --azul-claro-navBar: #396ab6;
+  --azul-medio-navBar: #1665c0;
+  --azul-claro-navBar: #2b81e2;
+  --verde-oscuro-navBar: #0c431a;
   --blanco-navBar: #c4cfdc;
   --blanco-link: #EFEFEF;
+  --blanco: #FFF;
+  --negro: #000;
+  --negro-semiOpaco: rgba(0, 0, 0, 1);
 
   --font-family-link: 'Kanit', 'sans-serif';
+  --font-family-lato: 'Lato', 'sans-serif';
 
   
   --font-size-small: 0.875rem;
@@ -36,6 +42,10 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+
+ * {
+  box-sizing: border-box;
+ }
 
  html {
   line-height: 1.15; /* 1 */

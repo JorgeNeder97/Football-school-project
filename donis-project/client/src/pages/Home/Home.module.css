@@ -1,5 +1,26 @@
 .mainContainer {
     display: flex;
     flex-direction: column;
+    background: url("FondoGeneral.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.videoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
     
+
+    .videoTitulo {
+        position: absolute;
+        top: 45;
+        margin: auto;
+        color: var(--blanco);
+        font-family: var(--font-family-lato);
+        font-size: 5rem;
+    }
 }
