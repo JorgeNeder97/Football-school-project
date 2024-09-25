@@ -50,7 +50,11 @@
             color: var(--blanco-link);
             font-family: var(--font-family-link);
             font-size: var(--font-size-subheading);
+            transition: .4s all ease;
         }
 
+        .links:hover {
+            color: var(--verde-pasto);
+        }
     }
 }

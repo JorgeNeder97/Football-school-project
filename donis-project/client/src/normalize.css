@@ -6,11 +6,12 @@
   --azul-medio-navBar: #1665c0;
   --azul-claro-navBar: #2b81e2;
   --verde-oscuro-navBar: #0c431a;
+  --verde-pasto: #57c957;
   --blanco-navBar: #c4cfdc;
   --blanco-link: #EFEFEF;
   --blanco: #FFF;
   --negro: #000;
-  --negro-semiOpaco: rgba(0, 0, 0, 1);
+  --negro-semiOpaco: rgba(0, 0, 0, .7);
 
   --font-family-link: 'Kanit', 'sans-serif';
   --font-family-lato: 'Lato', 'sans-serif';
@@ -23,7 +24,7 @@
   --font-size-heading: 1.5rem;
   --font-size-large-heading: 2rem;
   --font-size-extra-large-heading: 2.5rem;
-
+  --font-size-gigant-heading: 3.5rem;
 }
 
 

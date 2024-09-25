@@ -7,12 +7,14 @@
 }
 
 .videoContainer {
+    max-height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
-
+    background: none;
+    overflow: hidden;
     
 
     .videoTitulo {
@@ -21,6 +23,70 @@
         margin: auto;
         color: var(--blanco);
         font-family: var(--font-family-lato);
-        font-size: 5rem;
+        font-size: var(--font-size-large-heading);
+    }
+
+    .video {
+        height: 300px;
+    }
+
+}
+
+.torneoChanguito {
+    width: 100%;
+    height: 100px;
+    background: rgba(50, 50, 50, .7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .torneoTitulo {
+        text-align: center;
+        font-family: var(--font-family-lato);
+        font-size: var(--font-size-large-heading);
+        color: var(--blanco);
+        margin: 0;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .videoContainer {
+        max-height: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background: none;
+        overflow: hidden;
+        
+    
+        .videoTitulo {
+            position: absolute;
+            top: 45;
+            margin: auto;
+            color: var(--blanco);
+            font-family: var(--font-family-lato);
+            font-size: 5rem;
+        }
+    
+    }
+
+    .torneoChanguito {
+        width: 100%;
+        height: 150px;
+        background: rgba(50, 50, 50, .7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        .torneoTitulo {
+            text-align: center;
+            font-family: var(--font-family-lato);
+            font-size: var(--font-size-large-heading);
+            color: var(--blanco);
+            margin: 0;
+        }
     }
 }

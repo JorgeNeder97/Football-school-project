@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export const Carrusel = () => {
     const images = ['imagen.jpg', 'imagen2.jpg', 'imagen3.jpg'];
-    const titles = ['Forjando campeones dentro y fuera de la cancha', 'Forjando campeones dentro y fuera de la cancha', 'Forjando campeones dentro y fuera de la cancha'];
+    const titles = ['', '', ''];
     const links = ['/', '/', '/'];
     const [selectedIndex, setSelectedIndex] = useState(0);
     const [selectedImage, setSelectedImage] = useState(images[0]);
@@ -50,8 +50,19 @@ export const Carrusel = () => {
                     onLoad={() => setLoaded(true)}
                 />
                 <div className={styles.titleContainer}><p className={styles.title}>{title}</p></div>
-                <Link to={link} className={styles.navLink}>Leer más</Link>
+                {/* <Link to={link} className={styles.navLink}>Leer más</Link> */}
                 <div className={styles.filtro}></div>
+                <div className={styles.mainContainer}>
+                    <h3 className={styles.categoriasTitulo}>Categorías Participantes</h3>
+                        <Link to="" className={styles.link}>2011</Link>
+                        <Link to="" className={styles.link}>2012</Link>
+                        <Link to="" className={styles.link}>2013</Link>
+                        <Link to="" className={styles.link}>2014</Link>
+                        <Link to="" className={styles.link}>2015</Link>
+                        <Link to="" className={styles.link}>2016</Link>
+                        <Link to="" className={styles.link}>2017</Link>
+                        <Link to="" className={styles.link}>2018</Link>
+                    </div>
             </div>
         </>
     )
