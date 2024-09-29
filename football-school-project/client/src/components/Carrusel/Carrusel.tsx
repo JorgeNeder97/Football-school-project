@@ -1,15 +1,13 @@
-import { useState, useEffect } from 'react'
-import styles from './Carrusel.module.css'
+import { useState, useEffect } from 'react';
+import styles from './Carrusel.module.css';
 import { Link } from 'react-router-dom';
 
 export const Carrusel = () => {
     const images = ['imagen.jpg', 'imagen2.jpg', 'imagen3.jpg'];
     const titles = ['', '', ''];
-    const links = ['/', '/', '/'];
     const [selectedIndex, setSelectedIndex] = useState(0);
     const [selectedImage, setSelectedImage] = useState(images[0]);
     const [title, setTitle] = useState(titles[0]);
-    const [link, setLink] = useState(links[0])
     const [loaded, setLoaded] = useState(false);
 
     const selectNewImage = (index: number, images:string[], next: boolean = true) => {
@@ -20,7 +18,6 @@ export const Carrusel = () => {
             setSelectedImage(images[nextIndex]);
             setSelectedIndex(nextIndex);
             setTitle(titles[nextIndex]);
-            setLink(links[nextIndex]);
         }, 500);
     }
 
