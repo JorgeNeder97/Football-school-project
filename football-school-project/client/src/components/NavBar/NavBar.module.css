@@ -18,8 +18,8 @@
     }
 
     .logoContainer {
-        width: 75%;
-        padding-left: 50px;
+        width: 55%;
+        padding-left: 120px;
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
@@ -27,7 +27,7 @@
     }
 
     .logo {
-        width: 50px;
+        width: 80px;
     }
     
     .logoTexto {

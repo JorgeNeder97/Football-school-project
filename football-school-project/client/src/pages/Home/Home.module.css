@@ -70,6 +70,10 @@
             font-family: var(--font-family-lato);
             font-size: 5rem;
         }
+
+        .video {
+            height: 600px;
+        }
     
     }
 

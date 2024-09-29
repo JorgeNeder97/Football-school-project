@@ -11,32 +11,32 @@ export const GaleriaNoticias = () => {
                     <div className={styles.noticia}>
                         <Noticia
                             id={1}
-                            titulo={"Torneo Changuito 2024"}
-                            adelanto={"Un hoy bien vivido hace que cada ayer sea un sueño de felicidad y cada mañana una visión de esperanza"}
+                            titulo={"Noticia Uno"}
+                            adelanto={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut"}
                             imagen={"noticia1.jpg"}
                         />
                     </div>
                     <div className={styles.noticia}>
                         <Noticia 
                             id={2} 
-                            titulo={"Entrenadores que inspiran"} 
-                            adelanto={"La clave del éxito en el fútbol infantil: entrenadores que inspiran. Los buenos entrenadores en equipos juveniles moldean futuros atletas y personas."} 
+                            titulo={"Noticia Dos"} 
+                            adelanto={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut"} 
                             imagen={"noticia2.jpg"} 
                         />
                     </div>
                     <div className={styles.noticia}>
                         <Noticia 
                             id={3} 
-                            titulo={"Un empate para recordar"} 
-                            adelanto={"Unión Santiago empató contra la Escuelita Jorge Donis este viernes 20 de Septiembre tras un partido lleno de emociones"} 
+                            titulo={"Noticia Tres"} 
+                            adelanto={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut"} 
                             imagen={"noticia3.jpg"} 
                         />
                     </div>
                     <div className={styles.noticia}>
                         <Noticia 
                             id={4} 
-                            titulo={"La Escuelita Jorge Donis triunfa en el Torneo Changuito 2023"} 
-                            adelanto={"La Escuelita Jorge Donis se coronó campeona del Torneo Changuito 2023 con una actuación memorable."} 
+                            titulo={"Noticia Cuatro"} 
+                            adelanto={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut"} 
                             imagen={"noticia4.jpg"} 
                         />
                     </div>

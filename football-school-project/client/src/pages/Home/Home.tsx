@@ -15,7 +15,7 @@ export const Home = () => {
                     <h3 className={styles.videoTitulo}>FORJANDO LEYENDAS</h3>
                 </div>
                 <div className={styles.torneoChanguito}>
-                    <h3 className={styles.torneoTitulo}>Torneo Changuito</h3>
+                    <h3 className={styles.torneoTitulo}>Nuestro Torneo</h3>
                 </div>
                 <Carrusel />
                 <GaleriaNoticias />

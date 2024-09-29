@@ -1,6 +1,5 @@
 import styles from './NavBarMobile.module.css';
 import { Link } from "react-router-dom";
-import logoHorizontal from '#assets/donis.png';
 import logo from '#assets/logo.png';
 import marcaPersonal from '#assets/marcaPersonal.png';
 
@@ -10,7 +9,6 @@ export const NavBarMobile = () => {
             <div className={styles.mobileContainer}>
                 <div className={styles.logosContainer}>
                     <img src={logo} alt="" className={styles.logo} />
-                    <img src={logoHorizontal} alt="" className={styles.logoTexto}/>
                 </div>
                 <label className={styles.hamburgerMenuButton}>
                     <input type="checkbox" />
